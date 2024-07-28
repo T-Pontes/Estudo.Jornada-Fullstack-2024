@@ -11,6 +11,7 @@ public class CategoryHandler(AppDbContext context) : ICategoryHandler
 {
     public async Task<Response<Category?>> CreateAsync(CreateCategoryRequest request)
     {
+        await Task.Delay(5000);
         try
         {
             var category = new Category

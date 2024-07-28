@@ -12,7 +12,6 @@ namespace Fina.Core.Responses
             int pageSize = Configuration.DefaultPageSize)
             : base(data)
         {
-            //Data = data;
             TotalCount = totalCount;
             CurrentPage = currentPage;
             PageSize = pageSize;
